@@ -1,0 +1,938 @@
+@font-face {
+  font-family: "Kelvin";
+  src: url("../assets/fonts/Kelvinch-Bold.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+html,
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+
+.xacaro_logo_lontiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.first_section_new {
+  background-image: url("../../assets/images/Sample 2 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 16px;
+  color: #fff;
+  min-height: 97vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.first_section_new .banner_text_1 p {
+  font-family: "Kelvin";
+  margin-bottom: 24px;
+  font-size: 54px;
+  line-height: 70px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+.first_section_new .banner_text_2 p {
+  font-family: "Montserrat";
+  margin-bottom: 56px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.first_section_new .rotate_Button {
+  position: relative;
+}
+.first_section_new .rotate_Button .wait_listButton:hover {
+  background: #14b869;
+  cursor: pointer;
+}
+.first_section_new .rotate_Button .wait_listButton:focus {
+  outline: 0;
+}
+.first_section_new .rotate_Button .wait_listButton {
+  background: #0088ff;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 50%;
+  font-family: "Raleway", sans-serif;
+  transition: 0.6s;
+  overflow: hidden;
+  text-transform: none;
+  font-weight: 500;
+  z-index: 1000;
+}
+.first_section_new .rotate_Button .rotate_image {
+  z-index: -1;
+  right: 0px;
+  position: absolute;
+  top: -21.2%;
+  left: 0px;
+  animation: 10s rotate_image infinite alternate-reverse;
+}
+@keyframes rotate_image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 340px) {
+  .first_section_new .rotate_image {
+    z-index: -1;
+    position: absolute;
+    top: -27%;
+    left: 29%;
+    animation: 10s rotate_image infinite alternate-reverse;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .first_section_new .banner_text_1 p {
+    margin-bottom: 24px;
+    font-size: 35px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .first_section_new .first_section_new {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .first_section_new .first_section_new {
+    margin-top: 10px;
+  }
+}
+.first_section_new .wait_listBtn {
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+}
+
+.calculate_section {
+  background-color: #e5f3ff;
+  border-radius: 16px;
+  margin-top: 16px;
+  min-height: 97vh;
+  align-items: center;
+  padding: 20px;
+}
+.calculate_section .calculate_1 p {
+  font-family: "Kelvin";
+  padding-top: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: black;
+}
+.calculate_section .calculate_2 p {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(158, 155, 155);
+}
+.calculate_section .card_parent .calculate_card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-top: 26px;
+  box-shadow: #e0edf7;
+  padding: 46px;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1607843137);
+  z-index: 999;
+  max-width: 775px;
+  margin: 26px auto;
+}
+.calculate_section .card_parent .calculate_card .a_coin {
+  position: absolute;
+  top: -143px;
+  height: 100px;
+  right: 0px;
+}
+.calculate_section .card_parent .calculate_card .b_coin {
+  position: absolute;
+  left: -140px;
+  top: 34%;
+  height: 100px;
+}
+.calculate_section .card_parent .calculate_card .c_coin {
+  position: absolute;
+  bottom: -63px;
+  height: 100px;
+  right: -95px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .dollars {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #445361;
+  margin: 0px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .dollars_text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #445361;
+  margin: 0px;
+  padding-top: 6px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .retuns_dollar {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0088ff;
+  margin: 0px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .percent {
+  width: 52px;
+  height: 22px;
+  border-radius: 12px;
+  background-color: #e8fdf3;
+  color: #0f8d50;
+  padding: 1px 6px;
+  margin-left: 6px;
+  margin: 0px;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .returns {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #445361;
+}
+.calculate_section .card_parent .calculate_card .investing_amount_box .returns_percent {
+  padding-top: 6px;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider {
+  margin-top: 34px;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider option {
+  padding: 1px;
+  rotate: 272deg;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .amout_slider_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .amout_slider_label .investment_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #445361;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .amout_slider_label .amount {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0d1822;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background-image: url("../../assets/images/Vector.png");
+  cursor: pointer;
+}
+.calculate_section .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background-image: url("../../assets/images/Vector.png");
+  cursor: pointer;
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider option {
+  padding: 1px;
+  rotate: 272deg;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider .amout_slider_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider .amout_slider_label .investment_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #445361;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider .amout_slider_label .amount {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .perfomance_slider #formControlRange {
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  accent-color: #0088ff;
+  width: 100%;
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider option {
+  padding: 1px;
+  rotate: 272deg;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d1822;
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider .amout_slider_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider .amout_slider_label .investment_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #445361;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider .amout_slider_label .amount {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .card_parent .calculate_card .investing_year_slider #formControlRange {
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  accent-color: #0088ff;
+  width: 100%;
+}
+@media only screen and (max-width: 1020px) {
+  .calculate_section .a_coin {
+    position: absolute;
+    top: 65px;
+    right: 12px;
+    height: 74px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .calculate_section .calculate_section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 26px;
+    position: relative;
+  }
+  .calculate_section .calculate_section .a_coin {
+    position: absolute;
+    top: 45px;
+    right: 60px;
+  }
+  .calculate_section .calculate_section .b_coin {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+  }
+  .calculate_section .calculate_section .c_coin {
+    position: absolute;
+    bottom: 0px;
+    right: 48px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .calculate_section .a_coin {
+    display: none;
+  }
+  .calculate_section .b_coin {
+    display: none;
+  }
+  .calculate_section .c_coin {
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .calculate_section .investing_amount_box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.how_its_work_section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-top: 16px;
+  min-height: 97vh;
+  position: relative;
+  overflow: hidden;
+}
+.how_its_work_section .doted {
+  position: absolute;
+  top: 46px;
+  right: 0px;
+  max-width: 200px;
+}
+.how_its_work_section .circle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  max-width: 90px;
+}
+.how_its_work_section .triangle {
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  max-width: 170px;
+}
+.how_its_work_section .work_1 p {
+  padding-top: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: black;
+  font-family: "Kelvin";
+}
+.how_its_work_section .work_2 p {
+  font-family: "Montserrat";
+  padding-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(158, 155, 155);
+}
+.how_its_work_section .timeline_root {
+  padding-top: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .center_line2 {
+  position: relative;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .center_line2 .center_line_img {
+  right: 50%;
+  left: 50%;
+  position: absolute;
+  top: 60px;
+  width: 100;
+  height: 40vh;
+  height: 80%;
+  max-width: 40px;
+  border: 1px solid #e5f3ff;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-left-container {
+  max-width: 380px;
+  min-height: 165px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  float: left;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-right-container {
+  max-width: 380px;
+  min-height: 165px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  float: right;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-left {
+  position: relative;
+  width: auto;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-left .timeline_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-left .timeline_subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-right {
+  position: relative;
+  width: auto;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-right .timeline_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .content-right .timeline_subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .meta-line {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: 0px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .meta-date {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  border-radius: 100%;
+  background: #f0f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how_its_work_section .timeline_root .conference-timeline-content .timeline-article .meta-date .date {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #97aaba;
+  z-index: 5;
+  font-weight: bold;
+}
+@media only screen and (max-width: 780px) {
+  .how_its_work_section .doted {
+    display: none;
+  }
+  .how_its_work_section .circle {
+    display: none;
+  }
+  .how_its_work_section .triangle {
+    display: none;
+  }
+  .how_its_work_section .timeline_root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content {
+    margin-left: 0;
+    left: 50px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .center_line_img {
+    right: 0px;
+    left: 50px;
+    position: absolute;
+    top: 83px;
+    width: 100;
+    height: 40vh;
+    height: 80%;
+    max-width: 0px;
+    border: 1px solid #e5f3ff;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article {
+    display: block;
+    overflow: visible;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+    margin-bottom: 20px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left:before {
+    display: none;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .how_its_work_section .doted {
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    height: 170px;
+    width: 100px;
+  }
+  .how_its_work_section .circle {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 80px;
+    width: 80px;
+  }
+  .how_its_work_section .triangle {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    height: 170px;
+    width: 100px;
+  }
+  .how_its_work_section .timeline_root {
+    padding-top: 0px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
+    width: 100%;
+    max-width: 300px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
+    width: 100%;
+    max-width: 300px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
+    width: 100%;
+    max-width: 300px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
+    width: 100%;
+    max-width: 300px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .timeline_img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .how_its_work_section .timeline_root .direction_timeline {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .meta-date {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 0px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 0px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 0px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 0px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .timeline_img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.cards_section {
+  margin-top: 16px;
+}
+.cards_section .card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  gap: 16px;
+}
+.cards_section .card_container .card_item {
+  min-height: 120px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 2px rgba(0, 0, 0, 0.0588235294);
+}
+.cards_section .card_container .card_item .item_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 70px;
+  min-width: 320px;
+  padding: 24px 26px;
+}
+.cards_section .card_container .card_item .item_container .card_title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #445361;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+.cards_section .card_container .card_item .item_container .card_subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #677f94;
+  margin: 0px;
+  padding-top: 6px;
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 390px) {
+  .cards_section {
+    padding: 20px;
+  }
+  .cards_section .card_container .card_item .item_container {
+    min-width: 250px;
+  }
+}
+.footer_section {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #00559f;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.footer_section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer_section .footer_img_1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.footer_section .footer_img_2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.footer_section .footer_text_1 p {
+  font-family: "Kelvin";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  align-items: center;
+  color: white;
+  margin: 0px;
+  padding-top: 60px;
+  z-index: 10;
+}
+.footer_section .footer_text_2 p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: white;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: "Montserrat";
+}
+.footer_section .wait_list_button:hover {
+  background-color: #e5f3ff;
+  cursor: pointer;
+}
+.footer_section .wait_list_button:hover .Waitlist_butn {
+  background-color: #e5f3ff;
+  cursor: pointer;
+}
+.footer_section .wait_list_button {
+  min-height: 60px;
+  min-width: 320px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+}
+.footer_section .wait_list_button .Waitlist_butn {
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #0088ff;
+  font-family: "Montserrat";
+  background-color: white;
+}
+.footer_section .bottom_xacro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid #408dcf;
+}
+.footer_section .bottom_xacro .footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer_section .bottom_xacro .footer_conduct {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 54px;
+  text-align: right;
+  color: #ffffff;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+@media only screen and (max-width: 880px) {
+  .footer_section .wait_list_button {
+    min-width: 200px;
+    margin-top: 20px;
+  }
+  .footer_section .footer_text_1 p {
+    padding-top: 74px;
+    font-size: 30px;
+  }
+  .footer_section .footer_img_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+  }
+  .footer_section .footer_img_2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .footer_section .footer_logo {
+    margin-top: 15px;
+  }
+}/*# sourceMappingURL=xacaro.css.map */
