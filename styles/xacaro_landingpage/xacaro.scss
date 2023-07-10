@@ -6,6 +6,10 @@
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat-Regular.ttf");
 }
+@font-face {
+  font-family: "Montserrat_bold";
+  src: url("../../assets/fonts/Montserrat-ExtraBold.ttf");
+}
 
 html,
 body {
@@ -23,7 +27,10 @@ body {
   padding-bottom: 24px;
   padding-top: 24px;
 }
-
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
 .first_section_new {
   background-image: url("../../assets/images/Sample\ 2\ 1.png");
   -webkit-background-size: cover;
@@ -85,6 +92,7 @@ body {
       text-transform: none;
       font-weight: 500;
       z-index: 1000;
+      font-family: "Montserrat";
     }
     .rotate_image {
       z-index: -1;
@@ -94,7 +102,6 @@ body {
       left: 0px;
       animation: 10s rotate_image infinite alternate-reverse;
     }
-
     @keyframes rotate_image {
       from {
         transform: rotate(0deg);
@@ -122,22 +129,25 @@ body {
       color: #ffffff;
       font-weight: 700;
       text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .banner_text_2 p {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
-  @media only screen and (max-width: 767px) {
-    .first_section_new {
-      margin-top: 100px;
-    }
-  }
+
   @media only screen and (max-width: 576px) {
     .first_section_new {
       margin-top: 10px;
+
+      .wait_listBtn {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+      }
     }
-  }
-  .wait_listBtn {
-    width: 80px;
-    height: 80px;
-    font-size: 14px;
   }
 }
 
@@ -153,7 +163,7 @@ body {
     font-family: "Kelvin";
     padding-top: 60px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 48px;
     text-align: center;
     color: black;
@@ -161,104 +171,188 @@ body {
 
   .calculate_2 p {
     padding-top: 16px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
     color: rgb(158, 155, 155);
+    font-family: "Montserrat";
   }
-  .card_parent {
-    .calculate_card {
+  .parent {
+    display: flex;
+    justify-content: center;
+    .card_parent {
       position: relative;
-      background-color: #fff;
-      border-radius: 16px;
-      margin-top: 26px;
-      box-shadow: #e0edf7;
-      padding: 46px;
-      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1607843137);
-      z-index: 999;
-      max-width: 775px;
-      margin: 26px auto;
 
       .a_coin {
         position: absolute;
-        top: -143px;
+        top: -126px;
         height: 100px;
-        right: 0px;
+        right: -43px;
       }
 
       .b_coin {
         position: absolute;
-        left: -140px;
-        top: 34%;
+        left: -150px;
+        top: 50%;
         height: 100px;
       }
 
       .c_coin {
         position: absolute;
-        bottom: -63px;
-        height: 100px;
-        right: -95px;
+        right: -67px;
+        bottom: -31px;
       }
 
-      .investing_amount_box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        // column-gap: 40px;
-        .dollars {
-          font-family: "Montserrat";
-          font-size: 32px;
-          font-weight: 700;
-          line-height: 40px;
-          color: #445361;
-          margin: 0px;
-        }
-        .dollars_text {
-          font-family: "Montserrat";
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 20px;
-          color: #445361;
-          margin: 0px;
-          padding-top: 6px;
+      .calculate_card {
+        background-color: #fff;
+        border-radius: 16px;
+        margin-top: 26px;
+        padding: 46px;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1607843137);
+        max-width: 775px;
+        margin: 26px auto;
+        position: relative;
+        z-index: 10;
+
+        .investing_amount_box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          .dollars {
+            font-family: "Montserrat_bold";
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #445361;
+            margin: 0px;
+          }
+          .dollars_text {
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #445361;
+            margin: 0px;
+            padding-top: 6px;
+          }
+
+          .retuns_dollar {
+            font-family: "Montserrat_bold";
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #0088ff;
+            margin: 0px;
+          }
+          .percent {
+            width: 52px;
+            height: 22px;
+            border-radius: 12px;
+            background-color: #e8fdf3;
+            color: #0f8d50;
+            padding: 1px 6px;
+            margin-left: 6px;
+            margin: 0px;
+            font-family: "Montserrat";
+          }
+          .returns {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #445361;
+          }
+          .returns_percent {
+            padding-top: 6px;
+          }
         }
 
-        .retuns_dollar {
-          font-family: "Montserrat";
-          font-size: 32px;
-          font-weight: 700;
-          line-height: 40px;
-          color: #0088ff;
-          margin: 0px;
-        }
-        .percent {
-          width: 52px;
-          height: 22px;
-          border-radius: 12px;
-          background-color: #e8fdf3;
-          color: #0f8d50;
-          padding: 1px 6px;
-          margin-left: 6px;
-          margin: 0px;
-        }
-        .returns {
-          font-family: "Montserrat";
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          color: #445361;
-        }
-        .returns_percent {
-          padding-top: 6px;
+        .investing_amout_slider {
+          margin-top: 34px;
+
+          datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+          }
+
+          option {
+            padding: 1px;
+            rotate: 272deg;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #0d1822;
+            font-family: "Montserrat";
+          }
+          .amout_slider_label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .investment_text {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: #445361;
+              font-family: "Montserrat";
+            }
+            .amount {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+
+          .investing_slider {
+            // .value_slider{
+            //   width: 100%;
+            //   height: 10px;
+            //   border-radius: 8px;
+            //   background: #f0f3f5;
+            // }
+            .investing_slider_range {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 100%;
+              height: 10px;
+              border-radius: 8px;
+              background: #f0f3f5;
+              // overflow: hidden;
+            }
+
+            .investing_slider_range::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 20px;
+              height: 22px;
+              border: 0;
+              margin-top: -7px;
+              background: url("../../assets/images/thumb.svg");
+              background-repeat: no-repeat;
+              cursor: pointer;
+            }
+            .investing_slider_range::-webkit-slider-runnable-track {
+              background: #0088ff;
+              height: 8px;
+              border-radius: 10px;
+              width: 30px;
+            }
+            .investing_slider_range::-webkit-range-progress {
+              background: #81e4a8;
+            }
+          }
         }
       }
 
-      .investing_amout_slider {
-        margin-top: 34px;
-
+      .performance_slider {
         datalist {
           display: flex;
           flex-direction: column;
@@ -270,7 +364,7 @@ body {
         option {
           padding: 1px;
           rotate: 272deg;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 14px;
           line-height: 20px;
           color: #0d1822;
@@ -286,87 +380,46 @@ body {
             font-size: 14px;
             line-height: 20px;
             color: #445361;
+            font-family: "Montserrat";
           }
           .amount {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: #0d1822;
+            font-family: "Montserrat";
           }
         }
-
         .investing_slider {
-          .investing_slider_range {
-            width: 100%;
-            border-radius: 12px;
-            outline: none;
-            cursor: pointer;
-          }
-          .investing_slider_range::-webkit-slider-thumb {
+          .performance_range {
             -webkit-appearance: none;
             appearance: none;
-            width: 23px;
-            height: 24px;
+            width: 100%;
+            height: 10px;
+            border-radius: 8px;
+            background: #f0f3f5;
+            // overflow: hidden;
+          }
+
+          .performance_range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 22px;
             border: 0;
-            background-image: url("../../assets/images/Vector.png");
+            margin-top: -7px;
+            background: url("../../assets/images/thumb.svg");
+            background-repeat: no-repeat;
             cursor: pointer;
           }
-          .investing_slider_range::-moz-range-thumb {
-            width: 23px;
-            height: 25px;
-            border: 0;
-            background-image: url("../../assets/images/Vector.png");
-            cursor: pointer;
+          .performance_range::-webkit-slider-runnable-track {
+            background: #0088ff;
+            height: 8px;
+            border-radius: 8px;
           }
-        }
-      }
-
-      .perfomance_slider {
-        // margin-top: 28px;
-
-        datalist {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          writing-mode: vertical-lr;
-          width: 100%;
-        }
-
-        option {
-          padding: 1px;
-          rotate: 272deg;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 20px;
-          color: #0d1822;
-          font-family: "Montserrat";
-        }
-        .amout_slider_label {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .investment_text {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            color: #445361;
-            font-family: "Montserrat";
+          .performance_range::-webkit-range-progress {
+            background: #f0f5f2;
           }
-          .amount {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
-            color: #0d1822;
-            font-family: "Montserrat";
-          }
-        }
-        #formControlRange {
-          border-radius: 12px;
-          outline: none;
-          cursor: pointer;
-          accent-color: #0088ff;
-          width: 100%;
         }
       }
 
@@ -384,10 +437,11 @@ body {
         option {
           padding: 1px;
           rotate: 272deg;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 14px;
           line-height: 20px;
           color: #0d1822;
+          font-family: "Montserrat";
         }
         .amout_slider_label {
           display: flex;
@@ -409,69 +463,179 @@ body {
             font-family: "Montserrat";
           }
         }
-        #formControlRange {
-          border-radius: 12px;
-          outline: none;
-          cursor: pointer;
-          accent-color: #0088ff;
+        .investing_year_range {
+          -webkit-appearance: none;
+          appearance: none;
           width: 100%;
+          height: 10px;
+          border-radius: 8px;
+          background: #f0f3f5;
+          // overflow: hidden;
+        }
+
+        .investing_year_range::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 20px;
+          height: 22px;
+          border: 0;
+          margin-top: -7px;
+          background: url("../../assets/images/thumb.svg");
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        .investing_year_range::-webkit-slider-runnable-track {
+          background: #0088ff;
+          height: 8px;
+          border-radius: 8px;
+        }
+        .investing_year_range::-webkit-range-progress {
+          background: #f0f5f2;
         }
       }
     }
   }
+}
 
-  @media only screen and (max-width: 1020px) {
-    .a_coin {
-      position: absolute;
-      top: 65px;
-      right: 12px;
-      height: 74px;
+@media only screen and (max-width: 1020px) {
+  .a_coin {
+    position: absolute;
+    top: 65px;
+    right: 12px;
+    height: 74px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .calculate_section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 26px;
+    position: relative;
+    .parent {
+      .card_parent {
+        .a_coin {
+          position: absolute;
+          top: -121px;
+          right: -60px;
+        }
+        .b_coin {
+          position: absolute;
+          left: -108px;
+          top: 50%;
+        }
+        .c_coin {
+          position: absolute;
+          bottom: -24px;
+          right: -65px;
+        }
+      }
     }
   }
-  @media only screen and (max-width: 1000px) {
-    .calculate_section {
-      padding-left: 8rem;
-      padding-right: 8rem;
-      padding-bottom: 26px;
-      position: relative;
+}
+@media only screen and (max-width: 870px) {
+  .calculate_section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 26px;
+    position: relative;
+    .parent {
+      .card_parent {
+        .a_coin {
+          position: absolute;
+          top: -139px;
+          right: -24px;
+          height: 82px;
+        }
+        .b_coin {
+          position: absolute;
+          left: -92px;
+          height: 89px;
+          top: 50%;
+        }
+        .c_coin {
+          // display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .calculate_section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 26px;
+    position: relative;
+    .parent {
+      .card_parent {
+        .a_coin {
+          display: none;
+        }
+        .b_coin {
+          display: none;
+        }
+        .c_coin {
+          display: none;
+        }
 
-      .a_coin {
-        position: absolute;
-        top: 45px;
-        right: 60px;
-      }
-      .b_coin {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-      }
-      .c_coin {
-        position: absolute;
-        bottom: 0px;
-        right: 48px;
+        .calculate_card {
+          padding: 20px;
+        }
+
+        .calculate_card {
+          .investing_amount_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            .investin_amount {
+              .dollars {
+                width: max-content;
+              }
+            }
+            .invest_retuns {
+              .retuns_dollar {
+                width: max-content;
+              }
+            }
+
+            .investin_percentage {
+              padding-left: 50px;
+              padding-right: 50px;
+            }
+          }
+        }
       }
     }
   }
-  @media only screen and (max-width: 690px) {
-    .a_coin {
-      display: none;
-    }
-    .b_coin {
-      display: none;
-    }
-    .c_coin {
-      display: none;
+}
+@media only screen and (max-width: 560px) {
+  .calculate_section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    .parent {
+      display: block;
+      .card_parent {
+        .investing_amount_box {
+          .returns_percent {
+            padding-top: 6px;
+            text-align: center;
+          }
+          .dollars_text {
+            text-align: center;
+          }
+        }
+      }
     }
   }
-  @media only screen and (max-width: 560px) {
-    .investing_amount_box {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+  .investing_amount_box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
 
@@ -511,6 +675,8 @@ body {
     text-align: center;
     color: black;
     font-family: "Kelvin";
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .work_2 p {
@@ -644,7 +810,6 @@ body {
             line-height: 32px;
             color: #97aaba;
             z-index: 5;
-            font-weight: bold;
           }
         }
       }
@@ -663,10 +828,37 @@ body {
     .triangle {
       display: none;
     }
+    .work_1 p {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 40px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      color: black;
+      font-family: "Kelvin";
+    }
+
+    .work_2 p {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: "Montserrat";
+      padding-top: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      color: rgb(158, 155, 155);
+    }
     .timeline_root {
       display: flex;
       justify-content: center;
       align-items: center;
+      .direction_timeline {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+      }
       .conference-timeline-content {
         margin-left: 0;
         left: 50px;
@@ -831,7 +1023,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 10px;
-    gap: 16px;
+    gap: 20px;
 
     .card_item {
       min-height: 120px;
@@ -849,12 +1041,12 @@ body {
         padding: 24px 26px;
 
         .card_title {
-          font-weight: 800;
           font-size: 32px;
           line-height: 40px;
           color: #445361;
+          font-weight: 100;
           margin: 0px;
-          font-family: "Montserrat";
+          font-family: "Montserrat_bold";
         }
         .card_subtitle {
           font-weight: 500;
@@ -897,6 +1089,7 @@ body {
   position: relative;
   overflow: hidden;
   text-align: center;
+  margin: 15px;
 
   .container {
     display: flex;
@@ -984,6 +1177,7 @@ body {
       display: flex;
       align-items: center;
       gap: 12px;
+      margin-top: 10px;
     }
     .footer_conduct {
       font-weight: 400;
@@ -1022,8 +1216,13 @@ body {
     }
   }
   @media only screen and (max-width: 360px) {
-    .footer_logo {
-      margin-top: 15px;
+    .footer_section {
+      margin: 10px;
+      .bottom_xacro {
+        .footer_logo {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
