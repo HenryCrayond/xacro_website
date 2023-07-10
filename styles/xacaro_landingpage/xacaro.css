@@ -89,14 +89,16 @@ body {
   text-transform: none;
   font-weight: 500;
   z-index: 1000;
+  font-weight: 600;
   font-family: "Montserrat";
 }
 .first_section_new .rotate_Button .rotate_image {
+  translate: -50%;
   z-index: -1;
   right: 0px;
   position: absolute;
   top: -21.2%;
-  left: 0px;
+  left: 50%;
   animation: 10s rotate_image infinite alternate-reverse;
 }
 @keyframes rotate_image {
@@ -268,11 +270,9 @@ body {
   width: 100%;
 }
 .calculate_section .parent .card_parent .calculate_card .investing_amout_slider option {
-  padding: 1px;
-  rotate: 272deg;
+  rotate: 270deg;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 11px;
   color: #0d1822;
   font-family: "Montserrat";
 }
@@ -321,9 +321,6 @@ body {
   border-radius: 10px;
   width: 30px;
 }
-.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-webkit-range-progress {
-  background: #81e4a8;
-}
 .calculate_section .parent .card_parent .performance_slider datalist {
   display: flex;
   flex-direction: column;
@@ -332,11 +329,9 @@ body {
   width: 100%;
 }
 .calculate_section .parent .card_parent .performance_slider option {
-  padding: 1px;
-  rotate: 272deg;
+  rotate: 270deg;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 11px;
   color: #0d1822;
   font-family: "Montserrat";
 }
@@ -395,11 +390,9 @@ body {
   width: 100%;
 }
 .calculate_section .parent .card_parent .investing_year_slider option {
-  padding: 1px;
-  rotate: 272deg;
+  rotate: 270deg;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 11px;
   color: #0d1822;
   font-family: "Montserrat";
 }
@@ -791,6 +784,7 @@ body {
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .meta-date {
     margin-left: 0;
     left: 20px;
+    top: 8%;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
     max-width: 100%;
@@ -811,12 +805,22 @@ body {
     padding: 10px 25px;
     min-height: 65px;
   }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left .timeline_img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 75px;
+  }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left:before {
     display: none;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
     padding: 10px 25px;
     min-height: 65px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right .timeline_img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 75px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right:before {
     display: none;
@@ -1082,7 +1086,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100px;
+    height: 80px;
   }
   .footer_section .footer_img_2 {
     position: absolute;
@@ -1090,6 +1094,39 @@ body {
     right: 0px;
     z-index: 1;
     height: 80px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .footer_section .footer_section .footer_img_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 8px;
+  }
+  .footer_section .footer_section .footer_img_2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .footer_section .bottom_xacro {
+    margin-top: 25px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #408dcf;
+  }
+  .footer_section .bottom_xacro .footer_logo {
+    margin-top: 10px;
+  }
+  .footer_section .bottom_xacro .footer_conduct {
+    line-height: 30px;
   }
 }
 @media only screen and (max-width: 360px) {

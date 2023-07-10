@@ -31,6 +31,7 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
+
 .first_section_new {
   background-image: url("../../assets/images/Sample\ 2\ 1.png");
   -webkit-background-size: cover;
@@ -92,14 +93,16 @@ body {
       text-transform: none;
       font-weight: 500;
       z-index: 1000;
+      font-weight: 600;
       font-family: "Montserrat";
     }
     .rotate_image {
+      translate: -50%;
       z-index: -1;
       right: 0px;
       position: absolute;
       top: -21.2%;
-      left: 0px;
+      left: 50%;
       animation: 10s rotate_image infinite alternate-reverse;
     }
     @keyframes rotate_image {
@@ -282,11 +285,9 @@ body {
           }
 
           option {
-            padding: 1px;
-            rotate: 272deg;
+            rotate: 270deg;
             font-weight: 600;
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 11px;
             color: #0d1822;
             font-family: "Montserrat";
           }
@@ -312,12 +313,7 @@ body {
           }
 
           .investing_slider {
-            // .value_slider{
-            //   width: 100%;
-            //   height: 10px;
-            //   border-radius: 8px;
-            //   background: #f0f3f5;
-            // }
+           
             .investing_slider_range {
               -webkit-appearance: none;
               appearance: none;
@@ -325,7 +321,6 @@ body {
               height: 10px;
               border-radius: 8px;
               background: #f0f3f5;
-              // overflow: hidden;
             }
 
             .investing_slider_range::-webkit-slider-thumb {
@@ -345,9 +340,6 @@ body {
               border-radius: 10px;
               width: 30px;
             }
-            .investing_slider_range::-webkit-range-progress {
-              background: #81e4a8;
-            }
           }
         }
       }
@@ -362,13 +354,11 @@ body {
         }
 
         option {
-          padding: 1px;
-          rotate: 272deg;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 20px;
-          color: #0d1822;
-          font-family: "Montserrat";
+          rotate: 270deg;
+            font-weight: 600;
+            font-size: 11px;
+            color: #0d1822;
+            font-family: "Montserrat";
         }
         .amout_slider_label {
           display: flex;
@@ -435,11 +425,9 @@ body {
         }
 
         option {
-          padding: 1px;
-          rotate: 272deg;
+          rotate: 270deg;
           font-weight: 600;
-          font-size: 14px;
-          line-height: 20px;
+          font-size: 11px;
           color: #0d1822;
           font-family: "Montserrat";
         }
@@ -463,6 +451,7 @@ body {
             font-family: "Montserrat";
           }
         }
+
         .investing_year_range {
           -webkit-appearance: none;
           appearance: none;
@@ -880,6 +869,7 @@ body {
             .meta-date {
               margin-left: 0;
               left: 20px;
+              top: 8%;
             }
             .content-left-container {
               max-width: 100%;
@@ -899,6 +889,12 @@ body {
             .content-left {
               padding: 10px 25px;
               min-height: 65px;
+
+              .timeline_img {
+                width: 100%;
+                max-width: 300px;
+                max-height: 75px;
+              }
               &:before {
                 display: none;
               }
@@ -906,6 +902,11 @@ body {
             .content-right {
               padding: 10px 25px;
               min-height: 65px;
+              .timeline_img {
+                width: 100%;
+                max-width: 300px;
+                max-height: 75px;
+              }
               &:before {
                 display: none;
               }
@@ -1205,7 +1206,7 @@ body {
       position: absolute;
       top: 0px;
       left: 0px;
-      height: 100px;
+      height: 80px;
     }
     .footer_img_2 {
       position: absolute;
@@ -1213,6 +1214,41 @@ body {
       right: 0px;
       z-index: 1;
       height: 80px;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    .footer_section {
+      .footer_img_1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 8px;
+      }
+      .footer_img_2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        height: 80px;
+      }
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .bottom_xacro {
+      margin-top: 25px;
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1px solid #408dcf;
+      .footer_logo {
+        margin-top: 10px;
+      }
+      .footer_conduct {
+        line-height: 30px;
+      }
     }
   }
   @media only screen and (max-width: 360px) {
