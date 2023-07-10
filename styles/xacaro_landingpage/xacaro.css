@@ -262,14 +262,34 @@ body {
 .calculate_section .parent .card_parent .calculate_card .investing_amout_slider {
   margin-top: 34px;
 }
-.calculate_section .parent .card_parent .calculate_card .investing_amout_slider datalist {
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_mobile {
+  display: none;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_mobile datalist {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   writing-mode: vertical-lr;
   width: 100%;
 }
-.calculate_section .parent .card_parent .calculate_card .investing_amout_slider option {
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_mobile option {
+  rotate: 270deg;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_default {
+  display: block;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_default datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .option_default option {
   rotate: 270deg;
   font-weight: 600;
   font-size: 11px;
@@ -321,14 +341,34 @@ body {
   border-radius: 10px;
   width: 30px;
 }
-.calculate_section .parent .card_parent .performance_slider datalist {
+.calculate_section .parent .card_parent .performance_slider .option_mobile {
+  display: none;
+}
+.calculate_section .parent .card_parent .performance_slider .option_mobile datalist {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   writing-mode: vertical-lr;
   width: 100%;
 }
-.calculate_section .parent .card_parent .performance_slider option {
+.calculate_section .parent .card_parent .performance_slider .option_mobile option {
+  rotate: 270deg;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .parent .card_parent .performance_slider .option_default {
+  display: block;
+}
+.calculate_section .parent .card_parent .performance_slider .option_default datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .parent .card_parent .performance_slider .option_default option {
   rotate: 270deg;
   font-weight: 600;
   font-size: 11px;
@@ -382,14 +422,34 @@ body {
 .calculate_section .parent .card_parent .performance_slider .investing_slider .performance_range::-webkit-range-progress {
   background: #f0f5f2;
 }
-.calculate_section .parent .card_parent .investing_year_slider datalist {
+.calculate_section .parent .card_parent .investing_year_slider .option_mobile {
+  display: none;
+}
+.calculate_section .parent .card_parent .investing_year_slider .option_mobile datalist {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   writing-mode: vertical-lr;
   width: 100%;
 }
-.calculate_section .parent .card_parent .investing_year_slider option {
+.calculate_section .parent .card_parent .investing_year_slider .option_mobile option {
+  rotate: 270deg;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0d1822;
+  font-family: "Montserrat";
+}
+.calculate_section .parent .card_parent .investing_year_slider .option_default {
+  display: block;
+}
+.calculate_section .parent .card_parent .investing_year_slider .option_default datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+.calculate_section .parent .card_parent .investing_year_slider .option_default option {
   rotate: 270deg;
   font-weight: 600;
   font-size: 11px;
@@ -542,6 +602,108 @@ body {
   .calculate_section .parent {
     display: block;
   }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_mobile datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_mobile option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_default datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .investing_amout_slider .option_default option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_mobile datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_mobile option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_default datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .performance_slider .option_default option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_mobile datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_mobile option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_default datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 100%;
+  }
+  .calculate_section .parent .card_parent .investing_year_slider .option_default option {
+    rotate: 270deg;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0d1822;
+    font-family: "Montserrat";
+  }
   .calculate_section .parent .card_parent .investing_amount_box .returns_percent {
     padding-top: 6px;
     text-align: center;
@@ -625,10 +787,12 @@ body {
   border: 1px solid #e5f3ff;
 }
 .how_its_work_section .timeline_root .conference-timeline-content .timeline-article {
+  -moz-column-gap: 160px;
+       column-gap: 160px;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   margin: 20px 0;
@@ -770,7 +934,7 @@ body {
     right: 0px;
     left: 50px;
     position: absolute;
-    top: 83px;
+    top: 57px;
     width: 100;
     height: 40vh;
     height: 80%;
@@ -890,11 +1054,13 @@ body {
     width: 100%;
     max-width: 200px;
     padding: 8px 0px;
+    margin-bottom: 0px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
     width: 100%;
     max-width: 200px;
     padding: 8px 0px;
+    margin-bottom: 0px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
     width: 100%;

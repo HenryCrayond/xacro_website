@@ -276,21 +276,45 @@ body {
         .investing_amout_slider {
           margin-top: 34px;
 
-          datalist {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            writing-mode: vertical-lr;
-            width: 100%;
+          .option_mobile {
+            display: none;
+
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
           }
 
-          option {
-            rotate: 270deg;
-            font-weight: 600;
-            font-size: 11px;
-            color: #0d1822;
-            font-family: "Montserrat";
+          .option_default {
+            display: block;
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
           }
+
           .amout_slider_label {
             display: flex;
             justify-content: space-between;
@@ -313,7 +337,6 @@ body {
           }
 
           .investing_slider {
-           
             .investing_slider_range {
               -webkit-appearance: none;
               appearance: none;
@@ -345,20 +368,43 @@ body {
       }
 
       .performance_slider {
-        datalist {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          writing-mode: vertical-lr;
-          width: 100%;
-        }
+        .option_mobile {
+          display: none;
 
-        option {
-          rotate: 270deg;
+          datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+          }
+
+          option {
+            rotate: 270deg;
             font-weight: 600;
             font-size: 11px;
             color: #0d1822;
             font-family: "Montserrat";
+          }
+        }
+
+        .option_default {
+          display: block;
+          datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+          }
+
+          option {
+            rotate: 270deg;
+            font-weight: 600;
+            font-size: 11px;
+            color: #0d1822;
+            font-family: "Montserrat";
+          }
         }
         .amout_slider_label {
           display: flex;
@@ -416,20 +462,43 @@ body {
       .investing_year_slider {
         // margin-top: 28px;
 
-        datalist {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          writing-mode: vertical-lr;
-          width: 100%;
+        .option_mobile {
+          display: none;
+
+          datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+          }
+
+          option {
+            rotate: 270deg;
+            font-weight: 600;
+            font-size: 11px;
+            color: #0d1822;
+            font-family: "Montserrat";
+          }
         }
 
-        option {
-          rotate: 270deg;
-          font-weight: 600;
-          font-size: 11px;
-          color: #0d1822;
-          font-family: "Montserrat";
+        .option_default {
+          display: block;
+          datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+          }
+
+          option {
+            rotate: 270deg;
+            font-weight: 600;
+            font-size: 11px;
+            color: #0d1822;
+            font-family: "Montserrat";
+          }
         }
         .amout_slider_label {
           display: flex;
@@ -606,6 +675,126 @@ body {
     .parent {
       display: block;
       .card_parent {
+        .investing_amout_slider {
+          .option_mobile {
+            display: block !important;
+
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+
+          .option_default {
+            display: none !important;
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+        }
+        .performance_slider {
+          .option_mobile {
+            display: block !important;
+
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+
+          .option_default {
+            display: none !important;
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+        }
+        .investing_year_slider {
+          .option_mobile {
+            display: block !important;
+
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+
+          .option_default {
+            display: none !important;
+            datalist {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              writing-mode: vertical-lr;
+              width: 100%;
+            }
+
+            option {
+              rotate: 270deg;
+              font-weight: 600;
+              font-size: 11px;
+              color: #0d1822;
+              font-family: "Montserrat";
+            }
+          }
+        }
         .investing_amount_box {
           .returns_percent {
             padding-top: 6px;
@@ -701,10 +890,11 @@ body {
         }
       }
       .timeline-article {
+        column-gap: 160px;
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         position: relative;
         overflow: hidden;
         margin: 20px 0;
@@ -856,7 +1046,7 @@ body {
             right: 0px;
             left: 50px;
             position: absolute;
-            top: 83px;
+            top: 57px;
             width: 100;
             height: 40vh;
             height: 80%;
@@ -990,11 +1180,13 @@ body {
               width: 100%;
               max-width: 200px;
               padding: 8px 0px;
+              margin-bottom: 0px;
             }
             .content-right-container {
               width: 100%;
               max-width: 200px;
               padding: 8px 0px;
+              margin-bottom: 0px;
             }
             .content-left {
               width: 100%;
