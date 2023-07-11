@@ -271,6 +271,14 @@ body {
           .returns_percent {
             padding-top: 6px;
           }
+          .investing_percentage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .slider_img{
+              width: 80%;
+            }
+          }
         }
 
         .investing_amout_slider {
@@ -1211,28 +1219,22 @@ body {
 
 .cards_section {
   margin-top: 16px;
+
   .card_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 10px;
     gap: 20px;
-
     .card_item {
-      min-height: 120px;
-      max-width: fit-content;
+      min-width: 300px;
+      padding: 20px;
       border-radius: 16px;
       box-shadow: 0px 0px 24px 2px #0000000f;
-
-      .item_container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 70px;
-        min-width: 320px;
-        padding: 24px 26px;
-
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+   
         .card_title {
           font-size: 32px;
           line-height: 40px;
@@ -1250,7 +1252,6 @@ body {
           padding-top: 6px;
           font-family: "Montserrat";
         }
-      }
     }
   }
 }
@@ -1261,6 +1262,7 @@ body {
 
     .card_container {
       .card_item {
+        min-width: 265px;
         .item_container {
           min-width: 250px;
         }
