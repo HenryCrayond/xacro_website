@@ -1088,6 +1088,7 @@ body {
 
 .cards_section {
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 .cards_section .card_container {
   display: flex;
