@@ -95,18 +95,14 @@
 
       <section class="first_section_new">
         <div class="container" style="margin: auto; z-index: 9">
-          <div class="banner_text_1">
-            <p>
-              Invest in vacation stays & discover the serene <br />
-              route to wealth
-            </p>
-          </div>
-          <div class="banner_text_2">
-            <p>
-              You invest, we build and run: Where investments flourish and your
-              wealth grows
-            </p>
-          </div>
+          <p class="banner_text_1">
+            Invest in vacation stays & discover the serene <br />
+            route to wealth
+          </p>
+          <p class="banner_text_2">
+            You invest, we build and run: Where investments flourish and your
+            wealth grows
+          </p>
 
           <div class="rotate_Button">
             <!-- <div class="rotate_image"> -->
@@ -117,7 +113,10 @@
             />
             <!-- </div> -->
             <button class="wait_listButton" onclick="">
-              <span>Join Waitlist</span>
+              <span
+                >Join<br />
+                Waitlist</span
+              >
             </button>
           </div>
         </div>
@@ -169,14 +168,15 @@
                     <p class="amount">₹ 10,00,000</p>
                   </div>
                   <div class="investing_slider">
+                    <div class="value_slider" id="value_slider" style="width:0%"></div>
                     <input
                       type="range"
-                      onchange="handleChangeInvesting"
                       class="investing_slider_range"
                       min="0"
                       max="100"
-                      value="60"
-                      step="5"
+                      value="0"
+                      step="1"
+                      id="investingSlider"
                     />
 
                     <div class="option_default">
@@ -219,14 +219,15 @@
                     <p class="amount">30 %</p>
                   </div>
                   <div class="investing_slider">
+                    <div class="value_slider" id="value_performance" style="width:0%;" ></div>
                     <input
                       type="range"
                       class="performance_range"
                       min="0"
                       max="100"
-                      value="60"
-                      step="10"
-                      id="formControlRange"
+                      value="0"
+                      step="1"
+                      id="performanceSlider"
                     />
                     <div class="option_default">
                       <datalist class="option" id="values">
@@ -266,14 +267,15 @@
                     <p class="amount">5 Years</p>
                   </div>
                   <div class="investing_slider">
+                    <div class="value_slider" id="value_investmentYear" style="width: 0%;"></div>
                     <input
                       type="range"
                       class="investing_year_range"
                       min="0"
                       max="100"
-                      value="3"
+                      value="0"
                       step="1"
-                      id="formControlRange"
+                      id="investing_year"
                     />
                     <div class="option_default">
                       <datalist class="option" id="values">
@@ -482,17 +484,17 @@
         <div class="container" style="margin: auto; z-index: 9">
           <div class="card_container">
             <div class="card_item">
-                <div>
-                  <p class="card_title">8</p>
-                  <p class="card_subtitle">Properties</p>
-                </div>
-                <div>
-                  <img
-                    alt="property"
-                    class="property"
-                    src="./assets/images/property.png"
-                  />
-                </div>
+              <div>
+                <p class="card_title">8</p>
+                <p class="card_subtitle">Properties</p>
+              </div>
+              <div>
+                <img
+                  alt="property"
+                  class="property"
+                  src="./assets/images/property.png"
+                />
+              </div>
             </div>
             <div class="card_item">
               <div>
@@ -570,14 +572,41 @@
         <img
           alt="footer_1"
           class="footer_img_1"
-          src="./assets/images/footer_1.svg"
+          src="./assets/images/Group 67.png"
         />
         <img
           alt="footer_2"
           class="footer_img_2"
-          src="./assets/images/Vector.svg"
+          src="./assets/images/Group 88.png"
         />
       </section>
     </section>
+
+    <script>
+      const input = document.querySelector("#investingSlider");
+      let rangeWidth = document.getElementById('value_slider')
+
+      input.addEventListener("input", (event) => {
+        rangeWidth.style.width =`${event.target.value}%`        
+      });
+    </script>
+
+     <script>
+      const inputPerformance = document.querySelector("#performanceSlider");
+      let performanceWidth = document.getElementById('value_performance')
+
+      inputPerformance.addEventListener("input", (event) => {
+        performanceWidth.style.width =`${event.target.value}%`        
+      });
+    </script>
+
+     <script>
+      const year_input = document.querySelector("#investing_year");
+      let yearWidth = document.getElementById('value_investmentYear')
+
+      year_input.addEventListener("input", (event) => {
+        yearWidth.style.width =`${event.target.value}%`        
+      });
+    </script>
   </body>
 </html>
