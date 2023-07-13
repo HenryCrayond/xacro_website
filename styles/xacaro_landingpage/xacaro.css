@@ -74,7 +74,7 @@ body {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.9px;
-  text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
 }
 .first_section_new .rotate_Button {
   position: relative;
@@ -150,7 +150,7 @@ body {
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    text-shadow: 0px 0.5px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
   }
   .first_section_new .banner_text_2 {
     letter-spacing: 0;
@@ -670,7 +670,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
   position: relative;
-  z-index: 9999ss;
+  z-index: 10;
 }
 .calculate_section .parent .card_parent .investing_year_slider input[type=range]::-moz-range-track {
   height: 8px;
@@ -790,16 +790,16 @@ body {
   .calculate_section .parent {
     display: block;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .option_mobile {
-    display: block !important;
-  }
-  .calculate_section .parent .card_parent .investing_amout_slider .option_default {
-    display: none !important;
-  }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider {
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider .value_slider {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .value_slider {
     top: 4px;
     height: 10px;
     border-bottom-left-radius: 4px;
@@ -808,7 +808,7 @@ body {
     background: #0088ff;
     z-index: 1;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider .investing_slider_range {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -818,7 +818,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -831,13 +831,13 @@ body {
     cursor: pointer;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider input[type=range] {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range] {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -847,7 +847,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider input[type=range]::-moz-range-thumb {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
          appearance: none;
     width: 20px;
@@ -861,22 +861,22 @@ body {
     position: relative;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_amout_slider .investing_slider input[type=range]::-moz-range-track {
+  .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range]::-moz-range-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .performance_slider .option_mobile {
-    display: block !important;
-  }
-  .calculate_section .parent .card_parent .performance_slider .option_default {
-    display: none !important;
-  }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider {
     position: relative;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider .value_slider {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .value_slider {
     top: 4px;
     height: 10px;
     border-bottom-left-radius: 4px;
@@ -885,7 +885,7 @@ body {
     background: #0088ff;
     z-index: 1;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider .investing_slider_range {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .investing_slider_range {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -895,7 +895,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -908,13 +908,13 @@ body {
     cursor: pointer;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range] {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider input[type=range] {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -924,7 +924,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range]::-moz-range-thumb {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
          appearance: none;
     width: 20px;
@@ -938,22 +938,22 @@ body {
     position: relative;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range]::-moz-range-track {
+  .calculate_section .parent .card_parent .calculate_card .performance_slider .investing_slider input[type=range]::-moz-range-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .option_mobile {
-    display: block !important;
-  }
-  .calculate_section .parent .card_parent .investing_year_slider .option_default {
-    display: none !important;
-  }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider {
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider .value_slider {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .option_mobile {
+    display: block !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .option_default {
+    display: none !important;
+  }
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .value_slider {
     top: 4px;
     height: 10px;
     border-bottom-left-radius: 4px;
@@ -962,7 +962,7 @@ body {
     background: #0088ff;
     z-index: 1;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider .investing_slider_range {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .investing_slider_range {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -972,7 +972,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .investing_slider_range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -985,13 +985,13 @@ body {
     cursor: pointer;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider input[type=range] {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider input[type=range] {
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -1001,7 +1001,7 @@ body {
     background: #f0f3f5;
     position: relative;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider input[type=range]::-moz-range-thumb {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
          appearance: none;
     width: 20px;
@@ -1015,23 +1015,23 @@ body {
     position: relative;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_year_slider .investing_slider input[type=range]::-moz-range-track {
+  .calculate_section .parent .card_parent .calculate_card .investing_year_slider .investing_slider input[type=range]::-moz-range-track {
     height: 8px;
     border-radius: 10px;
     width: 30px;
     z-index: 10;
   }
-  .calculate_section .parent .card_parent .investing_amount_box .investing_percentage {
+  .calculate_section .parent .card_parent .calculate_card .investing_amount_box .investing_percentage {
     padding: 10px 0px !important;
   }
-  .calculate_section .parent .card_parent .investing_amount_box .returns_percent {
+  .calculate_section .parent .card_parent .calculate_card .investing_amount_box .returns_percent {
     padding-top: 6px;
     text-align: center;
     display: flex;
     justify-content: center !important;
     align-items: center;
   }
-  .calculate_section .parent .card_parent .investing_amount_box .dollars_text {
+  .calculate_section .parent .card_parent .calculate_card .investing_amount_box .dollars_text {
     text-align: center;
   }
   .investing_amount_box {

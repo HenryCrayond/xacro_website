@@ -74,7 +74,7 @@ body {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.9px;
-    text-shadow: 0px 6px 14px #00000040;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2)
   }
 
   .rotate_Button {
@@ -142,7 +142,7 @@ body {
     }
   }
 
-  @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2){
+  @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 10px;
     .banner_text_1 {
       margin-bottom: 24px;
@@ -153,12 +153,11 @@ body {
       text-align: center;
       padding-left: 15px;
       padding-right: 15px;
-      text-shadow: 0px .5px 6px rgba(0, 0, 0, 0.3);
+      text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2)
     }
     .banner_text_2 {
       letter-spacing: 0;
       font-size: 16px;
-
     }
   }
 }
@@ -700,7 +699,7 @@ body {
           background-repeat: no-repeat;
           cursor: pointer;
           position: relative;
-          z-index: 9999ss;
+          z-index:10;
         }
         input[type="range"]::-moz-range-track {
           height: 8px;
@@ -840,22 +839,22 @@ body {
       padding-right: 15px;
       color: #2d2c2c;
     }
-    .calculate_2 p{
+    .calculate_2 p {
       font-size: 16px;
     }
-
     .parent {
       display: block;
       .card_parent {
+        .calculate_card{
         .investing_amout_slider {
-          .option_mobile {
-            display: block !important;
-          }
-          .option_default {
-            display: none !important;
-          }
           .investing_slider {
             position: relative;
+            .option_mobile {
+              display: block !important;
+            }
+            .option_default {
+              display: none !important;
+            }
             .value_slider {
               top: 4px;
               height: 10px;
@@ -924,15 +923,16 @@ body {
             }
           }
         }
+
         .performance_slider {
-          .option_mobile {
-            display: block !important;
-          }
-          .option_default {
-            display: none !important;
-          }
           .investing_slider {
             position: relative;
+            .option_mobile {
+              display: block !important;
+            }
+            .option_default {
+              display: none !important;
+            }
             .value_slider {
               top: 4px;
               height: 10px;
@@ -1001,15 +1001,16 @@ body {
             }
           }
         }
+
         .investing_year_slider {
-          .option_mobile {
-            display: block !important;
-          }
-          .option_default {
-            display: none !important;
-          }
           .investing_slider {
             position: relative;
+            .option_mobile {
+              display: block !important;
+            }
+            .option_default {
+              display: none !important;
+            }
             .value_slider {
               top: 4px;
               height: 10px;
@@ -1095,6 +1096,7 @@ body {
         }
       }
     }
+  }
   }
   .investing_amount_box {
     display: flex;
@@ -1522,8 +1524,7 @@ body {
               float: none;
               margin-left: 90px;
               min-height: 53px;
-              margin-bottom:0px;
-
+              margin-bottom: 0px;
             }
             .content-right-container {
               max-width: 100%;
@@ -1531,17 +1532,17 @@ body {
               float: none;
               margin-left: 90px;
               min-height: 53px;
-              margin-bottom:0px;
+              margin-bottom: 0px;
             }
             .content-left {
               min-height: 65px;
-              padding:0px;
+              padding: 0px;
 
               .timeline_title {
                 color: #2d2c2c;
                 padding-top: 10px;
               }
-              .timeline_subtitle{
+              .timeline_subtitle {
                 padding-top: 4px;
               }
               .timeline_img {
@@ -1560,9 +1561,9 @@ body {
                 color: #2d2c2c;
                 padding-top: 10px;
               }
-            .timeline_subtitle{
-              padding-top: 4px;
-            }
+              .timeline_subtitle {
+                padding-top: 4px;
+              }
               .timeline_img {
                 width: 100%;
                 max-width: 300px;
