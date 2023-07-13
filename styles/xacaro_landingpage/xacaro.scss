@@ -381,7 +381,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
 
               background-repeat: no-repeat;
               cursor: pointer;
@@ -408,7 +408,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
 
               background-repeat: no-repeat;
               cursor: pointer;
@@ -520,7 +520,7 @@ body {
             height: 22px;
             border: 0;
             margin-top: -7px;
-            background: url("../../assets/images/thumb_.png");
+            background: url("../../assets/images/thumb.svg");
             background-repeat: no-repeat;
             cursor: pointer;
             z-index: 10;
@@ -546,7 +546,7 @@ body {
             height: 22px;
             border: 0;
             margin-top: -7px;
-            background: url("../../assets/images/thumb_.png");
+            background: url("../../assets/images/thumb.svg");
             background-repeat: no-repeat;
             cursor: pointer;
             position: relative;
@@ -659,7 +659,7 @@ body {
           height: 22px;
           border: 0;
           margin-top: -7px;
-          background: url("../../assets/images/thumb_.png");
+          background: url("../../assets/images/thumb.svg");
           background-repeat: no-repeat;
           cursor: pointer;
           z-index: 10;
@@ -685,7 +685,7 @@ body {
           height: 22px;
           border: 0;
           margin-top: -7px;
-          background: url("../../assets/images/thumb_.png");
+          background: url("../../assets/images/thumb.svg");
           background-repeat: no-repeat;
           cursor: pointer;
           position: relative;
@@ -821,6 +821,7 @@ body {
 
     .calculate_1 p {
       font-weight: 500;
+      color: #2d2c2c;
     }
 
     .parent {
@@ -855,7 +856,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -882,7 +883,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -908,7 +909,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -935,7 +936,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -961,7 +962,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -988,7 +989,7 @@ body {
               height: 22px;
               border: 0;
               margin-top: -7px;
-              background: url("../../assets/images/thumb_.png");
+              background: url("../../assets/images/thumb.svg");
               box-shadow: none;
               background-repeat: no-repeat;
               cursor: pointer;
@@ -1382,65 +1383,7 @@ body {
       }
     }
   }
-  // @media only screen and (max-width: 530px) {
-  //   .timeline_root {
-  //     .direction_timeline {
-  //       display: flex !important;
-  //       flex-direction: column-reverse !important;
-  //     }
-  //     .conference-timeline-content {
-  //       padding-top: 0px;
-  //       width: 100%;
-  //       .center_line2 {
-  //         .center_line_img {
-  //           // display: none;
-  //         }
-  //         .timeline-article {
-  //           padding-bottom: 10px;
-  //           .meta-date {
-  //             // display: none;
-  //           }
-  //           .content-left-container {
-  //             margin: auto;
-  //             max-width: 290px;
-  //             width: 100%;
-  //             float: none;
-  //             min-height: 53px;
-  //             display: flex;
-  //             justify-content: center;
-  //             align-items: center;
-  //           }
-  //           .content-right-container {
-  //             margin: auto;
-  //             max-width: 290px;
-  //             width: 100%;
-  //             float: none;
-  //             min-height: 53px;
-  //             display: flex;
-  //             justify-content: center;
-  //             align-items: center;
-  //           }
-  //           .content-left {
-  //             width: 100%;
-  //             max-width: 290px;
-  //             padding: 0px 0px;
-  //             margin-top: 12px;
-  //           }
-  //           .content-right {
-  //             width: 100%;
-  //             max-width: 290px;
-  //             padding: 0px 0px;
-  //             margin-top: 12px;
-  //           }
-  //           .timeline_img {
-  //             width: 100%;
-  //             max-width: 200px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+
   @media only screen and (max-width: 500px) {
     .work_1 p {
       padding-left: 20px;
@@ -1450,7 +1393,7 @@ body {
       font-weight: 700;
       line-height: 48px;
       text-align: center;
-      color: black;
+      color: #2d2c2c;
       font-family: "Kelvin";
     }
 
@@ -1519,6 +1462,10 @@ body {
               padding: 10px;
               min-height: 65px;
 
+              .timeline_title {
+                color: #2d2c2c;
+              }
+
               .timeline_img {
                 width: 100%;
                 max-width: 300px;
@@ -1531,6 +1478,9 @@ body {
             .content-right {
               padding: 10px;
               min-height: 65px;
+              .timeline_title {
+                color: #2d2c2c;
+              }
               .timeline_img {
                 width: 100%;
                 max-width: 300px;
@@ -1545,103 +1495,6 @@ body {
       }
     }
   }
-  // @media only screen and (max-width: 400px) {
-  //   .work_1 p {
-  //     padding-top: 60px;
-  //     font-size: 30px;
-  //     font-weight: 700;
-  //     line-height: 48px;
-  //     text-align: center;
-  //     color: black;
-  //     font-family: "Kelvin";
-  //     padding-left: 20px;
-  //     padding-right: 20px;
-  //   }
-
-  //   .work_2 p {
-  //     font-family: "Montserrat";
-  //     padding-top: 16px;
-  //     font-size: 14px;
-  //     font-weight: 500;
-  //     line-height: 24px;
-  //     text-align: center;
-  //     color: rgb(158, 155, 155);
-  //   }
-  //   .timeline_root {
-  //     .direction_timeline {
-  //       display: flex !important;
-  //       flex-direction: column-reverse !important;
-  //     }
-  //     .conference-timeline-content {
-  //       padding-top: 0px;
-  //       width: 100%;
-  //       .center_line2 {
-  //         .timeline-article {
-  //           padding-bottom: 0px;
-  //           margin-top: 20px;
-  //           .meta-date {
-  //             height: 50px;
-  //             width: 50px;
-  //             border-radius: 50%;
-  //           }
-  //           .content-left-container {
-  //             width: 100%;
-  //             max-width: 300px;
-  //             margin-bottom: 0px;
-  //           }
-  //           .content-right-container {
-  //             width: 100%;
-  //             max-width: 300px;
-  //             margin-bottom: 0px;
-  //           }
-  //           .content-left {
-  //             width: 100%;
-  //             min-width: 300px;
-
-  //             .timeline_title {
-  //               font-weight: 600;
-  //               font-size: 24px;
-  //               color: #000000;
-  //               margin: 0px;
-  //               font-family: "Montserrat_bold";
-  //             }
-  //             .timeline_subtitle {
-  //               padding-top: 10px;
-  //               font-weight: 500;
-  //               font-size: 16px;
-  //               color: #c7c7c7;
-  //               margin: 0px;
-  //               font-family: "Montserrat";
-  //             }
-  //           }
-  //           .content-right {
-  //             width: 100%;
-  //             min-width: 300px;
-  //             .timeline_title {
-  //               font-weight: 600;
-  //               font-size: 24px;
-  //               color: #000000;
-  //               margin: 0px;
-  //               font-family: "Montserrat_bold";
-  //             }
-  //             .timeline_subtitle {
-  //               padding-top: 10px;
-  //               font-weight: 500;
-  //               font-size: 16px;
-  //               color: #c7c7c7;
-  //               margin: 0px;
-  //               font-family: "Montserrat";
-  //             }
-  //           }
-  //           .timeline_img {
-  //             width: 100%;
-  //             max-width: 200px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 .cards_section {
@@ -1666,9 +1519,9 @@ body {
       .card_title {
         font-size: 32px;
         line-height: 40px;
-        color: #445361;
         font-weight: 100;
         margin: 0px;
+        color: #445361;
         font-family: "Montserrat_bold";
       }
       .card_subtitle {
