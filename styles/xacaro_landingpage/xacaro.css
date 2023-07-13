@@ -365,7 +365,7 @@ body {
   border: 0;
   margin-top: -7px;
   background: url("../../assets/images/thumb_.png");
-  border-radius: 40%;
+  border-radius: 48%;
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
@@ -394,7 +394,7 @@ body {
   border: 0;
   margin-top: -7px;
   background: url("../../assets/images/thumb_.png");
-  border-radius: 40%;
+  border-radius: 48%;
   background-repeat: no-repeat;
   cursor: pointer;
   position: relative;
@@ -499,7 +499,7 @@ body {
   margin-top: -7px;
   border-radius: 40%;
   background: url("../../assets/images/thumb_.png");
-  background-repeat: no-repeat;
+  background-repeat: no-rep48t;
   cursor: pointer;
   z-index: 10;
 }
@@ -528,7 +528,7 @@ body {
   margin-top: -7px;
   border-radius: 40%;
   background: url("../../assets/images/thumb_.png");
-  background-repeat: no-repeat;
+  background-repeat: no-rep48t;
   cursor: pointer;
   position: relative;
   z-index: 9999ss;
@@ -632,7 +632,7 @@ body {
   margin-top: -7px;
   border-radius: 40%;
   background: url("../../assets/images/thumb_.png");
-  background-repeat: no-repeat;
+  background-repeat: no-rep48t;
   cursor: pointer;
   z-index: 10;
 }
@@ -661,7 +661,7 @@ body {
   margin-top: -7px;
   border-radius: 40%;
   background: url("../../assets/images/thumb_.png");
-  background-repeat: no-repeat;
+  background-repeat: no-rep48t;
   cursor: pointer;
   position: relative;
   z-index: 9999ss;
