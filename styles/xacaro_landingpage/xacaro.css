@@ -364,7 +364,7 @@ body {
   height: 20px;
   border: 0;
   margin-top: -7px;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   border-radius: 48%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -393,7 +393,7 @@ body {
   height: 20px;
   border: 0;
   margin-top: -7px;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   border-radius: 48%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -498,7 +498,7 @@ body {
   border: 0;
   margin-top: -7px;
   border-radius: 40%;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   background-repeat: no-rep48t;
   cursor: pointer;
   z-index: 10;
@@ -527,7 +527,7 @@ body {
   border: 0;
   margin-top: -7px;
   border-radius: 40%;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   background-repeat: no-rep48t;
   cursor: pointer;
   position: relative;
@@ -631,7 +631,7 @@ body {
   border: 0;
   margin-top: -7px;
   border-radius: 40%;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   background-repeat: no-rep48t;
   cursor: pointer;
   z-index: 10;
@@ -660,7 +660,7 @@ body {
   border: 0;
   margin-top: -7px;
   border-radius: 40%;
-  background: url("../../assets/images/thumb_.png");
+  background: url("../../assets/images/thumb.svg");
   background-repeat: no-rep48t;
   cursor: pointer;
   position: relative;
