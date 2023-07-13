@@ -64,7 +64,7 @@ body {
   font-weight: 700;
   letter-spacing: -2px;
   text-align: center;
-  text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .first_section_new .banner_text_2 {
   font-family: "Montserrat";
@@ -121,15 +121,6 @@ body {
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 340px) {
-  .first_section_new .rotate_image {
-    z-index: -1;
-    position: absolute;
-    top: -27%;
-    left: 29%;
-    animation: 10s rotate_image infinite alternate-reverse;
-  }
-}
 @media only screen and (max-width: 767px) {
   .first_section_new .banner_text_1 {
     margin-bottom: 24px;
@@ -146,14 +137,12 @@ body {
     padding-right: 15px;
   }
 }
-@media only screen and (max-width: 576px) {
-  .first_section_new .first_section_new {
+@media only screen and (max-width: 500px) {
+  .first_section_new {
     margin-top: 10px;
   }
-  .first_section_new .first_section_new .wait_listBtn {
-    width: 80px;
-    height: 80px;
-    font-size: 14px;
+  .first_section_new .banner_text_2 {
+    letter-spacing: 0;
   }
 }
 
@@ -251,14 +240,15 @@ body {
   margin: 0px;
 }
 .calculate_section .parent .card_parent .calculate_card .investing_amount_box .percent {
-  width: 52px;
-  height: 22px;
+  width: 50px;
+  height: 20 px;
   border-radius: 12px;
   background-color: #e8fdf3;
   color: #0f8d50;
   padding: 1px 6px;
   margin-left: 6px;
   margin: 0px;
+  text-align: center;
   font-family: "Montserrat";
 }
 .calculate_section .parent .card_parent .calculate_card .investing_amount_box .returns {
@@ -273,6 +263,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 6px;
 }
 .calculate_section .parent .card_parent .calculate_card .investing_amount_box .investing_percentage {
   display: flex;
@@ -373,12 +364,41 @@ body {
   height: 22px;
   border: 0;
   margin-top: -7px;
-  background: url("../../assets/images/thumb.svg");
+  background: url("../../assets/images/thumb_.png");
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
 }
 .calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider .investing_slider_range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 10px;
+  width: 30px;
+  z-index: 10;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #f0f3f5;
+  position: relative;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  width: 20px;
+  height: 22px;
+  border: 0;
+  margin-top: -7px;
+  background: url("../../assets/images/thumb_.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999ss;
+}
+.calculate_section .parent .card_parent .calculate_card .investing_amout_slider .investing_slider input[type=range]::-moz-range-track {
   height: 8px;
   border-radius: 10px;
   width: 30px;
@@ -475,12 +495,41 @@ body {
   height: 22px;
   border: 0;
   margin-top: -7px;
-  background: url("../../assets/images/thumb.svg");
+  background: url("../../assets/images/thumb_.png");
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
 }
 .calculate_section .parent .card_parent .performance_slider .investing_slider .performance_range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 10px;
+  width: 30px;
+  z-index: 10;
+}
+.calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #f0f3f5;
+  position: relative;
+}
+.calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  width: 20px;
+  height: 22px;
+  border: 0;
+  margin-top: -7px;
+  background: url("../../assets/images/thumb_.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999ss;
+}
+.calculate_section .parent .card_parent .performance_slider .investing_slider input[type=range]::-moz-range-track {
   height: 8px;
   border-radius: 10px;
   width: 30px;
@@ -577,12 +626,41 @@ body {
   height: 22px;
   border: 0;
   margin-top: -7px;
-  background: url("../../assets/images/thumb.svg");
+  background: url("../../assets/images/thumb_.png");
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
 }
 .calculate_section .parent .card_parent .investing_year_slider .investing_year_range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 10px;
+  width: 30px;
+  z-index: 10;
+}
+.calculate_section .parent .card_parent .investing_year_slider input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: #f0f3f5;
+  position: relative;
+}
+.calculate_section .parent .card_parent .investing_year_slider input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  width: 20px;
+  height: 22px;
+  border: 0;
+  margin-top: -7px;
+  background: url("../../assets/images/thumb_.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999ss;
+}
+.calculate_section .parent .card_parent .investing_year_slider input[type=range]::-moz-range-track {
   height: 8px;
   border-radius: 10px;
   width: 30px;
@@ -683,6 +761,9 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+  }
+  .calculate_section .calculate_1 p {
+    font-weight: 500;
   }
   .calculate_section .parent {
     display: block;
@@ -789,9 +870,16 @@ body {
     color: #0d1822;
     font-family: "Montserrat";
   }
+  .calculate_section .parent .card_parent .investing_amount_box .investing_percentage {
+    padding: 10px 0px !important;
+  }
   .calculate_section .parent .card_parent .investing_amount_box .returns_percent {
     padding-top: 6px;
     text-align: center;
+    padding-top: 6px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
   }
   .calculate_section .parent .card_parent .investing_amount_box .dollars_text {
     text-align: center;
@@ -1126,150 +1214,103 @@ body {
     max-width: 300px;
   }
 }
-@media only screen and (max-width: 530px) {
-  .how_its_work_section .timeline_root .direction_timeline {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content {
-    padding-top: 0px;
-    width: 100%;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .center_line_img {
-    display: none;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article {
-    padding-bottom: 10px;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .meta-date {
-    display: none;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
-    margin: auto;
-    max-width: 290px;
-    width: 100%;
-    float: none;
-    min-height: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
-    margin: auto;
-    max-width: 290px;
-    width: 100%;
-    float: none;
-    min-height: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
-    width: 100%;
-    max-width: 290px;
-    padding: 0px 0px;
-    margin-top: 12px;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
-    width: 100%;
-    max-width: 290px;
-    padding: 0px 0px;
-    margin-top: 12px;
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .timeline_img {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .how_its_work_section .work_1 p {
-    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
     font-size: 30px;
     font-weight: 700;
     line-height: 48px;
     text-align: center;
     color: black;
     font-family: "Kelvin";
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .how_its_work_section .work_2 p {
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: "Montserrat";
     padding-top: 16px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
     color: rgb(158, 155, 155);
+  }
+  .how_its_work_section .timeline_root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .how_its_work_section .timeline_root .direction_timeline {
     display: flex !important;
     flex-direction: column-reverse !important;
   }
   .how_its_work_section .timeline_root .conference-timeline-content {
-    padding-top: 0px;
-    width: 100%;
+    margin-left: 0;
+    left: 50px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .center_line_img {
+    right: 0px;
+    left: 44px;
+    position: absolute;
+    top: 40px;
+    width: 100;
+    height: 40vh;
+    height: 80%;
+    max-width: 0px;
+    border: 1px solid #e5f3ff;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article {
+    display: block;
+    overflow: visible;
     padding-bottom: 0px;
-    margin-top: 20px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+    top: 12%;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left-container {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 0px;
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 90px;
+    min-height: 53px;
+    margin-bottom: 20px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right-container {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 0px;
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 90px;
+    min-height: 53px;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left {
+    padding: 10px;
+    min-height: 65px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left .timeline_img {
     width: 100%;
-    min-width: 300px;
+    max-width: 300px;
+    max-height: 110px;
   }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left .timeline_title {
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-    margin: 0px;
-    font-family: "Montserrat_bold";
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left .timeline_subtitle {
-    padding-top: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #c7c7c7;
-    margin: 0px;
-    font-family: "Montserrat";
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-left:before {
+    display: none;
   }
   .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right {
+    padding: 10px;
+    min-height: 65px;
+  }
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right .timeline_img {
     width: 100%;
-    min-width: 300px;
+    max-width: 300px;
+    max-height: 110px;
   }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right .timeline_title {
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-    margin: 0px;
-    font-family: "Montserrat_bold";
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right .timeline_subtitle {
-    padding-top: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #c7c7c7;
-    margin: 0px;
-    font-family: "Montserrat";
-  }
-  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .timeline_img {
-    width: 100%;
-    max-width: 200px;
+  .how_its_work_section .timeline_root .conference-timeline-content .center_line2 .timeline-article .content-right:before {
+    display: none;
   }
 }
 
@@ -1316,18 +1357,19 @@ body {
     min-width: 290px;
   }
 }
-
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
   .cards_section {
-    padding: 20px;
+    padding: 20px 0px;
   }
   .cards_section .card_container .card_item {
+    width: 100%;
     min-width: 265px;
   }
   .cards_section .card_container .card_item .item_container {
     min-width: 250px;
   }
 }
+
 .footer_section {
   margin-top: 24px;
   display: flex;
@@ -1341,7 +1383,7 @@ body {
   position: relative;
   overflow: hidden;
   text-align: center;
-  margin: 15px;
+  margin-bottom: 10px;
 }
 .footer_section .container {
   display: flex;
